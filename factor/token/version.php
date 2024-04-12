@@ -26,9 +26,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version      = 2023101600;      // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version      = 2023080100;      // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires     = 2022041908; // Support Moodle 4.0 and higher.
 $plugin->component    = 'factor_token';
 $plugin->release      = 2022011700;
 $plugin->maturity     = MATURITY_STABLE;
 $plugin->dependencies = ['tool_mfa' => 2019102400];
+
+// Fix version numbers that are higher than 4.3 core.
+if (!during_initial_install() && (int) get_config('factor_token', 'version') >= 2023100900) {
+    set_config('version', '2023080100', 'factor_token');
+}
