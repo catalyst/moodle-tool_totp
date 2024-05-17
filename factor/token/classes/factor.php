@@ -201,7 +201,9 @@ class factor extends object_factor_base {
         $secretmanager->create_secret($expiry, false, $secret);
 
         // All the prep is now done, we can set this cookie.
-        setcookie($cookie, $secret, $expirytime, $CFG->sessioncookiepath, $CFG->sessioncookiedomain, false, true);
+        $cookiesecure = 1 == get_config('core', 'cookiesecure');
+        $cookiehttponly = 1 == get_config('core', 'cookiehttponly');
+        setcookie($cookie, $secret, $expirytime, $CFG->sessioncookiepath, $CFG->sessioncookiedomain, $cookiesecure, $cookiehttponly);
 
         // Finally emit a log event for storing the cookie.
         $state = [
