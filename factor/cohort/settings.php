@@ -38,10 +38,10 @@ $settings->add(new admin_setting_configtext('factor_cohort/weight',
     new lang_string('settings:weight', 'tool_mfa'),
     new lang_string('settings:weight_help', 'tool_mfa'), 100, PARAM_INT));
 
-$cohorts = cohort_get_all_cohorts();
+$cohorts = $DB->get_records('cohort', null, 'name asc', 'id,name');
 $choices = [];
 
-foreach ($cohorts['cohorts'] as $cohort) {
+foreach ($cohorts as $cohort) {
     $choices[$cohort->id] = $cohort->name;
 }
 
