@@ -207,7 +207,6 @@ class admin_setting_managemfa extends \admin_setting {
                 . ' <sup>' . $factor->get_weight() . '</sup>';
             }
 
-            $string = substr($string, 4);
             $table->data[] = new \html_table_row([$string, $combination['totalweight']]);
         }
 
