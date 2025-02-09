@@ -24,7 +24,7 @@ namespace tool_mfa\tests;
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class secret_manager_test extends \advanced_testcase {
+class secret_manager_test extends \core_phpunit\testcase {
 
     public function test_create_secret() {
         global $DB;

@@ -25,7 +25,7 @@ namespace factor_email\tests;
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class factor_test extends \advanced_testcase {
+class factor_test extends \core_phpunit\testcase {
 
     /**
      * Provides to test_generate_email_ip_address_location test.

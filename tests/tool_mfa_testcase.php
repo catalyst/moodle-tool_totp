@@ -31,7 +31,7 @@ require_once(__DIR__ . '/../lib.php');
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-abstract class tool_mfa_testcase extends \advanced_testcase {
+abstract class tool_mfa_testcase extends \core_phpunit\testcase {
 
     /**
      * Sets the state of the factor, in particular the weight and whether it is enabled

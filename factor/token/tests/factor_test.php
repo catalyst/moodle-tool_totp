@@ -25,7 +25,7 @@ namespace factor_token\tests;
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class factor_test extends \advanced_testcase {
+class factor_test extends \core_phpunit\testcase {
 
     public function setUp(): void {
         $this->resetAfterTest();
