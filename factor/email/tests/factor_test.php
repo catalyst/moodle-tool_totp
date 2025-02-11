@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace factor_email\tests;
-
 /**
  * Tests for TOTP factor.
  *
@@ -25,7 +23,7 @@ namespace factor_email\tests;
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class factor_test extends \core_phpunit\testcase {
+class email_factor_test extends \core_phpunit\testcase {
 
     /**
      * Provides to test_generate_email_ip_address_location test.
