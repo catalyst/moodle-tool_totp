@@ -55,16 +55,14 @@ The other major difference is that we support multiple authentication factor **t
 | Version         |  Branch      | Required patches     |
 |-----------------|--------------|----------------------|
 | Moodle 4.0 - 4.2| MOODLE_400_STABLE | None            |
-| Moodle 3.8 -3.9 | MOODLE_35_STABLE | None             |
-| Moodle 3.7      | MOODLE_35_STABLE | MDL-66340            |
-| Moodle 3.5-3.6  | MOODLE_35_STABLE | MDL-66340, MDL-60470 |
+| Moodle 4.3+     | Not supported here, now in Moodle core | |
 
 ## Totara supported branches
 | Version         |  Branch      | Required patches     |
 |-----------------|--------------|----------------------|
 | Totara 12-17    | TOTARA_12 | MDL-66340, MDL-60470 |
 | Totara 18       | TOTARA_18 | MDL-66340, MDL-60470 |
-| Totara 18       | TOTARA_19 | MDL-66340, MDL-60470 |
+| Totara 19       | TOTARA_19 | MDL-66340, MDL-60470 |
 
 ## Installation
 
