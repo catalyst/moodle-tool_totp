@@ -64,6 +64,7 @@ The other major difference is that we support multiple authentication factor **t
 |-----------------|--------------|----------------------|
 | Totara 12-17    | TOTARA_12 | MDL-66340, MDL-60470 |
 | Totara 18       | TOTARA_18 | MDL-66340, MDL-60470 |
+| Totara 18       | TOTARA_19 | MDL-66340, MDL-60470 |
 
 ## Installation
 
