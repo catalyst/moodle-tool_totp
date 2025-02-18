@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace factor_grace\tests;
-
 /**
  * Tests for grace factor.
  *
@@ -24,7 +22,7 @@ namespace factor_grace\tests;
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class factor_test extends \advanced_testcase {
+class grace_factor_test extends \core_phpunit\testcase {
 
     public function test_affecting_factors() {
         $this->resetAfterTest(true);

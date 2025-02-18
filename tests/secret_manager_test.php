@@ -14,8 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace tool_mfa\tests;
-
 /**
  * Tests for MFA secret manager class.
  *
@@ -24,7 +22,7 @@ namespace tool_mfa\tests;
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class secret_manager_test extends \advanced_testcase {
+class secret_manager_test extends \core_phpunit\testcase {
 
     public function test_create_secret() {
         global $DB;
